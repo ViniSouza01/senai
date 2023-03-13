@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    /* background-image: url('https://viajesantacruz.com.br/wp-content/uploads/2022/01/osasco-3.jpg'); */
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+    font: normal 1.5rem Arial;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lanchonete do suvaco</h1>
+    <div id="inputs">
+        <p>
+            <input type="text" placeholder="Cliente" id="cliente">
+            <input type="text" placeholder="Endereço" id="endereco">
+        </p>
+
+        <div id="qtdPedidos">
+            <p>
+                <div>
+                    <select id="lanches">
+                        <option hidden value="">Selecione</option>
+                        <option>X-ratao</option>
+                        <option>X-groselha</option>
+                        <option>X-galinheiro</option>
+                        <option>X-sujinho</option>
+                        <option>Churrassic-Park</option>
+                    </select>
+                    <input type="number" min="1" placeholder="Qtd" id="quantidade">
+                    <p id="add" onclick="add()">+ Adicionar pedido</p>
+                </p>
+            </div>
+            
+        </div>
+        <p>
+            <button onclick="verificar()">Finalizar pedido</button>
+        </p>
+        
+    </div>
+
+    <hr>
+
+    <div id="container">
+        <div id="cozinha">
+            <h3>Cozinha</h3>            
+            <div class="pedidos model">
+                <p id="pedido"></p>
+                <p id="data"></p>
+                <button onclick="concluir()">Concluir</button>
+            </div>
+        </div>
+
+        <span></span>
+
+        <div id="entregas">
+            <h3>Entregas</h3>
+            <div class="realizados model">
+                <h4>Pedidos finalizados</h4>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

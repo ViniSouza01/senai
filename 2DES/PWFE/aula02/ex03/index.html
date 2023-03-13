@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Sorteador de time</h1>
+        <p>
+            Quantidade de time em cada grupo
+            <input type="number" min="1" max="40" id="number">
+        </p>
+        <p>Digite abaixo o nome dos time</p>
+    <textarea id="textarea" cols="30" rows="15" placeholder="Nome dos times"></textarea>
+    <p>
+        <button style="cursor: pointer;" onclick="sortear()">Sortear</button>
+    </p>
+    </main>
+    <h2 id="h2">Resultados</h2>
+    <script src="./script.js"></script>
+</body>
+</html>

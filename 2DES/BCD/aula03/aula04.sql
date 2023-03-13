@@ -1,0 +1,5 @@
+-- DML (CRUD)
+-- INSERT INTO nomeTabela()
+-- SELECT * FROM nomeTabela
+-- UPDATE nomeTabela SET nomeCampos WHERE condição
+-- DELETE FROM nomeTabela WHERE condição

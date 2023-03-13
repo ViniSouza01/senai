@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    background-color: white;
+    width: 710px;
+    padding-right: 60px;
+    height: 440px;
+    gap: 3rem;
+    border-radius: 3%;
+    margin-top: 15vh;
+}
+
+#img-mobile {
+    display: none;
+}
+
+#img-desktop {
+    width: 360px;
+    height: 440px;
+    border-radius: 3% 0 0 3%;
+}
+
+#title {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-weight: bold;
+}
+
+#paragraph {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#content {
+    margin-top: 20px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.prices {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Fraunces';
+}
+
+.prices h1 {
+    color: hsl(158, 36%, 37%)   ;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #1c3623;
+    
+}
+
+@media(max-width: 600px) {
+    #img-desktop {
+        display: none;
+    }
+
+    #img-mobile {
+        display: block;
+        width: 260px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    main {
+        margin-top: 50px;
+        width: 200px;
+        height: 500px;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #title {
+        font-size: 13px;
+    }
+
+    #content {
+        gap: 12px;
+        margin-left: 20px;
+        line-height: normal;
+    }
+
+    #paragraph {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 10px;
+        width: 200px;
+        height: 20px;
+    }
+
+    button img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .prices {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prices p {
+        font-size: 11px;
+        color: rgba(0, 0, 0, .5);
+    }
+}

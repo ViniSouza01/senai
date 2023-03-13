@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    font: normal 15pt Arial;
+}
+
+input, select {
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#inputs {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#qtdPedidos {
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#aside {
+    display: flex;
+}
+
+span {
+    height: calc(100vh - 200px);
+    background-color: black;
+    width: 2px;
+}
+
+#quantidade {
+    width: 60px;
+}
+
+#add {
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.model {
+    display: none;
+}
+
+.pedidos {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: max-content;
+    text-align: center;
+    font-size: 15px;
+}

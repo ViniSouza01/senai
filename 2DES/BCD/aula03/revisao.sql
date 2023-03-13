@@ -1,0 +1,5 @@
+-- DDL: CRUD em banco de dados:
+-- CREATE TABLE nomeTabela
+-- DESCRIBE nomeTabela
+-- ALTER TABLE nomeTabela ADD/DROP/SET (adicionar, remover, modificar)
+-- DROP TABLE nomeTabela

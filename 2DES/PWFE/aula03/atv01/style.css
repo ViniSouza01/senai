@@ -1,0 +1,27 @@
+/* Tema padrão */
+.white {
+    background-color: #e5e5e5;
+}
+
+.white h1 {
+    color: black;
+}
+
+/* tema escuro */
+.dark {
+    background-color: black;
+}
+
+.dark h1 {
+    color: #e5e5e5;
+}
+
+.dark p {
+    color: #e5e5e5
+}
+
+/* Tema cinza */
+
+.gray {
+    background-color: gray;
+}

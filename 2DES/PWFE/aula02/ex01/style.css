@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: rgb(87, 87, 216);
+}
+h1, h2{
+    color: white;
+}
+
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+button{
+    padding: 10px;
+    font: normal 13pt Arial;
+    cursor: pointer;
+    border-radius: 10px;
+}

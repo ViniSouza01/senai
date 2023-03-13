@@ -1,0 +1,42 @@
+body {
+    font: normal 15pt Arial;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#preco {
+    font-weight: bold;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+#img, #img2 {
+    height: auto;
+}

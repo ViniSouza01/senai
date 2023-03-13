@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&family=Kaushan+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main-header {
+    background-color: #60ECCA;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    z-index: 2;
+}
+
+#title {
+    font-size: 50px;
+    font-family: 'Kaushan Script';
+    margin-top: 5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+#input-check {
+    display: flex;
+    gap: 2rem;
+}
+
+#button {
+    display: none;
+}
+
+#button:checked ~ #menu-lateral { /*Quando o botão estiver ativo*/
+    top: 10vh;
+    z-index: 1;
+    position: absolute;
+    opacity: 1;
+}
+
+label  {
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 35px;
+    border-top: 4px solid black;
+    transition: .6s;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+label #hamburguer::after, #hamburguer::before {
+    width: 30px;
+    height:4px;
+    content: '';
+    display: block;
+    margin-top: 6px;
+    background: black;
+    transition: .6s;
+}
+
+#button:checked ~ label{
+    border-top-color: transparent;
+}
+
+#button:checked ~ label #hamburguer::after{
+    transform: rotate(135deg);
+    margin-top: -4px;
+}
+
+#button:checked ~ label #hamburguer::before {
+    transform: rotate(-135deg);
+}
+
+#menu-header {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin-right: 5vh;
+    font-size: 30px;
+    font-family: 'Kaushan Script';
+    margin-top: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#menu-header > li:hover{
+    cursor: pointer;
+}
+
+/* Menu lateral */
+#images-menu {
+    width: 35px;
+    height: 40px;
+}
+
+#div-menu {
+    padding-left: 7vw;
+    display: flex;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 100vw;
+    height: 50%;
+}
+
+#div-menu > img:hover {
+    cursor: pointer;
+}
+
+#div-menu > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#div-menu > p {
+    margin-top: 6px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+#menu-lateral {
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #5DE2EB;
+    position: absolute;
+    top: 0vh;
+    opacity: 0;
+    z-index: -1;
+    transition: .6s;
+}
+
+
+
+/* Linhas das notícias */
+
+#header1 {
+    width: 100vw;
+    height: 15vh;
+    background-color: #2178FA;
+    display: flex;
+    position: static;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arima Madurai';
+}
+
+/* Notícia 1 */
+#noticia1 {
+    margin-top: 3vh;
+    margin-left: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 50vw;
+    height: 20vh;
+    text-decoration: underline;
+    font-family: 'Arima Madurai';
+}
+
+#noticia1 > img:hover {
+    cursor: pointer;
+}
+
+#noticia1 > h1:hover {
+    cursor: pointer;
+}
+
+/* Notícia 2 */
+#noticia2 {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    height: 10vh;
+    margin-top: 8vh;
+    margin-left: 40vh;
+    text-decoration: underline;
+    font-family: 'Arima Madurai';
+}
+
+#noticia2 > img {
+    width: 20vw;
+    height: 20vh;
+}
+
+#noticia2 > img:hover {
+    cursor: pointer;
+}
+
+#noticia2 > h1:hover {
+    cursor: pointer;
+}
+
+/* Notícia 3 */
+#noticia3 {
+    display: flex;
+    margin-top: 8vh;
+    margin-left: 7vw;
+    font-family: 'Arima Madurai';
+    align-items: center;
+    width: 70vw;
+    gap: 3rem;
+    text-decoration: underline;
+}
+
+#noticia3  img {
+    width: 20vw;
+}
+
+#noticia3 > img:hover {
+    cursor: pointer;
+}
+
+#noticia3 > h1:hover {
+    cursor: pointer;
+}
+
+/* 2° linha das notícias */
+#header2 {
+width: 100vw;
+height: 15vh;
+background-color: #2178FA;
+display: flex;
+position: static;
+color: white;
+justify-content: center;
+align-items: center;
+font-family: 'Arima Madurai';
+margin-top: 10vh;
+}
+
+/* Notícia 4 */
+#noticia4 {
+    margin-top: 3vh;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    width: 70vw;
+}
+
+#noticia4 img {
+    width: 30vw;
+    margin-left: 7vw;
+}
+
+#noticia4 > img:hover {
+    cursor: pointer;
+}
+
+#noticia4 > div h1:hover {
+    cursor: pointer;
+}
+
+.container1 {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 h1 {
+    text-decoration: underline;
+}
+
+#btn-noticia4 {
+    background-color: #E92424;
+    color: white;
+    border-radius: 20px;
+    margin-top: 5vh;
+    width: 20vw;
+    height: 5vh;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Arima Madurai';
+}
+
+#btn-noticia4:hover {
+    cursor: pointer;
+}
+
+/* Notícia 5 */
+#noticia5 {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 30vh;
+    width: 80vw;
+    text-decoration: underline;
+    margin-top: 10vh;
+}
+
+#noticia5 img {
+    width: 30vw;
+    height: 30vh;
+}
+
+#noticia5 > img:hover {
+    cursor: pointer;
+}
+
+#noticia5 > h1:hover {
+    cursor: pointer;
+}
